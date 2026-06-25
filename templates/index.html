@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div style="text-align: center;">
+<title>
+    AI Chatbot
+</title>
+</head>
+<body>
+<h2>AI CHATBOT</h2>
+<img src="{{ url_for('static', filename='Capture.png') }}" width="130">
+<p>Type your message below and click "Send" to chat with the bot.</p>
+<form method="POST">
+    <input type="text" name="message">
+    <button type="submit">Send</button>
+</form>
+<p><b>Bot:</b> {{ response }}</p>
+</body>
+</html>
